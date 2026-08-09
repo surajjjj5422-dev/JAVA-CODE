@@ -1,0 +1,79 @@
+// Genarate 4 random number and display third maximum number
+class FRNDTM
+{
+    public static void main(String[] args) {
+        int a,b,c,d,max,smax,tmax;
+        a=(int)(Math.random()*100);
+        b=(int)(Math.random()*100);
+        c=(int)(Math.random()*100);
+        d=(int)(Math.random()*100);
+        System.out.println("a="+a+" b="+b+" c="+c+" d="+d);
+        if(a>b)
+        {
+            if(a>c)
+            {
+                if(a>d)
+                {
+                    max=a;
+                    smax=d;
+                    tmax=c;
+                }
+                else
+                {
+                    max=d;
+                    smax=a;
+                    tmax=c;
+                }
+            }
+            else
+            {
+                if(c>d)
+                {
+                    max=c;
+                    smax=d;
+                    tmax=a;  
+                }
+                else
+                {
+                    max=d;
+                    smax=c;
+                    tmax=a;
+                }
+            }
+        }
+        else
+        {
+            if(b>c)
+            {
+                if(b>d)
+                {
+                    max=b;
+                    smax=d;
+                    tmax=c;
+                }
+                else
+                {
+                    max=d;
+                    smax=b;
+                    tmax=c;
+                }
+            }
+            else
+            {
+                if(c>d)
+                {
+                    max=c;
+                    smax=d;
+                    tmax=b;
+                }
+                else
+                {
+                    max=d;
+                    smax=c;
+                    tmax=b;
+                }
+            }
+        }
+        System.out.println("Max= "+max+" Smax= "+smax+" Tmax= "+tmax);       
+    }
+}
